@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>贪食蛇</title>
+    <style type="text/css">
+        body{
+            width: 100%;
+            margin: 0 auto;
+        }
+        .div1{
+            text-align: center;
+        }
+        .div1 button{
+            padding: 10px 15px;
+            background: forestgreen;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+        }
+        .div1 button:nth-child(4){
+            background: red;
+        }
+        #snake{
+            border: 1px solid black;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <canvas id="snake" width="800px" height="400px"></canvas>
+        <div>
+            <button onclick="">开始</button>
+            <!--<button id="stop">暂停</button>-->
+            <button onclick="window.location.reload()">重新开始</button>
+            <button onclick="window.close()">关闭窗口</button>
+        </div>
+    </div>
+    <script src="js/mysnake.js"></script>
+</body>
+</html>
